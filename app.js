@@ -32,4 +32,18 @@ function animate() {
   requestAnimationFrame(animate)
 }
 
+menuToggle.addEventListener("click", () => {
+  setTimeout(() => {
+    toggle = !toggle
+    console.log(toggle)
+  }, 300)
 
+  if (toggle) {
+    setTimeout(() => {
+      ul.classList.add("active")
+    }, 1000)
+  }
+  menuToggle.classList.toggle("active")
+})
+
+animate()
