@@ -135,6 +135,7 @@ ul {
 ul.active {
   opacity: 1;
   pointer-events: all;
+
 }
 
 li:hover {
